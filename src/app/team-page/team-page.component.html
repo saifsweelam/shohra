@@ -1,0 +1,12 @@
+<app-page-header text="فريق العمل"></app-page-header>
+
+<section id="content">
+    <div class="row">
+        <main class="text-center mb-4 col-lg-8 row">
+            <article *ngFor="let member of team" class="p-1 col-xs-12 col-sm-6 col-md-4">
+                <app-team-member [member]="member"></app-team-member>
+            </article>
+        </main>
+        <app-sidebar class="col-lg-4"></app-sidebar>
+    </div>
+</section>

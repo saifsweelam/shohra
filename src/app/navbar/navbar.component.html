@@ -1,0 +1,15 @@
+<nav class="sticky-top">
+    <input type="checkbox" id="menuToggler">
+    <label for="menuToggler" class="menu-open"><i class="fas fa-bars"></i></label>
+    <h1 class="brand">شُهرة</h1>
+    <div class="nav-links">
+        <label for="menuToggler" class="menu-close"><i class="fas fa-times"></i></label>
+        <ul>
+            <li><a (click)="collapseNavbar();" class="nav-link" routerLink="/">الرئيسية</a></li>
+            <li><a (click)="collapseNavbar();" class="nav-link" routerLink="/services">خدماتنا</a></li>
+            <li><a (click)="collapseNavbar();" class="nav-link" routerLink="/team">فريق العمل</a></li>
+            <li><a (click)="collapseNavbar();" class="nav-link" routerLink="/contact">تواصل معنا</a></li>
+        </ul>
+    </div>
+    <a href="tel:+991328432662" class="phone"><i class="fas fa-phone-volume"></i><span>+991 328 432 662</span></a>
+</nav>

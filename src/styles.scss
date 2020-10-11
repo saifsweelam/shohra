@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+@import './variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Tajawal:wght@800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+
+    font-size: 13px;
+
+    @media screen and (min-width: 200px) {
+        font-size: calc(13px + 6 * ((100vw - 320px) / 680));
+    }
+    
+    @media screen and (min-width: 1200px) {
+            font-size: 18px;
+    }
+}
+
+
+body {
+    font-family: Cairo, sans-serif;
+    color: $dark-theme-color;
+
+    h1, .brand, .bold {
+        font-family: Tajawal, sans-serif;
+    }
+}

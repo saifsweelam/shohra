@@ -1,0 +1,13 @@
+@import '../../variables';
+
+section#clients {
+    background: linear-gradient(180deg, #fffa, $dark-theme-color);
+
+    .row {
+        div {
+            img {
+                box-sizing: border-box;
+            }
+        }
+    }
+}

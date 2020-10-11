@@ -1,0 +1,41 @@
+@import '../../variables';
+
+header {
+    background: linear-gradient(180deg, $theme-color, rgba($light-theme-color, 0.4), #fff0);
+    min-height: 40vh;
+    margin: 0;
+
+    div:nth-child(1) {
+
+        h2 {
+            text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fcf, 0 0 40px #fcf, 0 0 50px #fcf, 0 0 60px #fcf, 0 0 70px #fcf;
+        }
+
+        a.btn {
+            background-color: $theme-color;
+            border-color: $theme-color;
+    
+            &:focus {
+                background-color: $dark-theme-color;
+            }
+        }
+    }
+}
+
+.separator {
+    background-color: #fffa;
+    height: 5vh;
+}
+
+#footage {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url('/assets/pexels-photo-196655.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

@@ -1,0 +1,20 @@
+@import '../../variables';
+
+aside {
+    padding: 2rem;
+    box-sizing: border-box;
+    border-radius: 25px;
+
+    h4 { text-align: center; }
+
+    section#get {
+        .btn.btn-primary {
+            background-color: $theme-color;
+            border: $theme-color;
+
+            &:focus, &:hover {
+                background-color: $dark-theme-color;
+            }
+        }
+    }
+}

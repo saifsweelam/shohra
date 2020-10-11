@@ -1,0 +1,44 @@
+@import '../../variables';
+
+@mixin random-bgr(){
+    color: darken(rgb(random(255), random(255), random(255)), 10%);
+}
+
+section#stats {
+    background-color: #fffa;
+    min-height: 40vh;
+    margin: 0;
+    align-items: center;
+
+    div {
+        box-sizing: border-box;
+    }
+
+    div.paragraph {
+        h2 {
+            padding-bottom: 1rem;
+            border-bottom: $dark-theme-color 2px solid;
+        }
+
+        p {
+            line-height: 2rem;
+            font-size: 1.3rem;
+            text-align: justify;
+        }
+    }
+
+    div.stats {
+
+        div {
+            @for $i from 1 through 6 {
+                div:nth-child(#{$i}) div {
+                    @include random-bgr();
+                    font-size: 2rem;
+                    i {
+                        font-size: 3.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

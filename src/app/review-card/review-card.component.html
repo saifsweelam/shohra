@@ -1,0 +1,8 @@
+<div class="card">
+    <img src="{{review.img}}" alt="{{review.name}}'s photo">
+    <div class="card-body">
+        <h3 class="card-title h5 bold">{{review.name}}</h3>
+        <h4 class="card-subtitle h6 text-muted mb-5">{{review.title}}</h4>
+        <p class="h5" [innerHTML]="review.content"></p>
+    </div>
+</div>

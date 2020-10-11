@@ -1,0 +1,9 @@
+<section id="reviews" class="text-center py-5">
+    <div class="p-5 background-vector"></div>
+    <h2 class="h1 bold">قال عنا العملاء</h2>
+    <div id="review-slider" class="carousel slide carousel-multi-item mt-2 p-5" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <app-review-card *ngFor="let review of reviews; let i = index;" [review]="review" class="carousel-item{{i == 0? ' active' : ''}}"></app-review-card>
+        </div>
+    </div>
+</section>
